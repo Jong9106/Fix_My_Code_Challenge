@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-""" Module to create a new class """
+''' im here again '''
 
 
-class square():
-    """ New Class square """
+class Square():
+    """Description"""
 
     def __init__(self, *args, **kwargs):
-        """ constructor"""
-        width = 0
-        height = 0
+        """Description"""
+        self.width = 0
+        self.height = 0
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -16,17 +16,17 @@ class square():
         """ Area of the square """
         return self.width * self.height
 
-    def permiterOfMySquare(self):
-        """ Perimetrer of square """
+    def permiter_of_my_square(self):
+        """Description"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """ String representation """
+        """Description"""
         return "{}/{}".format(self.width, self.height)
 
-if __name__ == "__main__":
 
-    s = square(width=12, height=9)
+if __name__ == "__main__":
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.PermiterOfMySquare())
+    print(s.permiterOfMySquare())
