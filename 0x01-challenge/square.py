@@ -2,7 +2,7 @@
 """ Module to create a new class """
 
 
-class square():
+class Square():
     """ New Class square """
 
     def __init__(self, *args, **kwargs):
